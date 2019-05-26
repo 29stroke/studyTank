@@ -8,10 +8,8 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 public class TankFrame extends Frame{
-	int x = 200;
-	int y = 200;
-	Dir dir = Dir.UP;
-	private static final int speed = 10;
+	private Tank myTank = new Tank(200, 200, Dir.UP);
+	private Bullet bullet = new Bullet(220, 220, Dir.UP);
 
 	public TankFrame(){
 		setSize(800, 600);
@@ -31,10 +29,8 @@ public class TankFrame extends Frame{
 	
 	@Override
 	public void paint(Graphics g){
-		//System.out.println("go");
-		g.fillRect(x, y, 50, 50);
-		//x += 10;
-		//y += 10;
+		myTank.paint(g);
+		bullet.paint(g);
 	}
 	
 	class myKeyListener extends KeyAdapter{
@@ -65,39 +61,6 @@ public class TankFrame extends Frame{
 			}
 
 			setMainTankDir();
-
-			switch (dir) {
-				case UP:
-					y -= speed;
-					break;
-				case RIGHT:
-					x += speed;
-					break;
-				case DOWN:
-					y += speed;
-					break;
-				case LEFT:
-					x -= speed;
-					break;
-				case UP_RIGHT:
-					y -= speed;
-					x += speed;
-					break;
-				case RIGHT_DOWN:
-					x += speed;
-					y += speed;
-					break;
-				case DOWN_LEFT:
-					y += speed;
-					x -= speed;
-					break;
-				case LEFT_UP:
-					x -= speed;
-					y -= speed;
-					break;
-				default:
-					break;
-			}
 		}
 
 		@Override
@@ -124,14 +87,19 @@ public class TankFrame extends Frame{
 		}
 
 		private void setMainTankDir(){
-			if(ku) dir = Dir.UP;
-			if(kr) dir = Dir.RIGHT;
-			if(kd) dir = Dir.DOWN;
-			if(kl) dir = Dir.LEFT;
-			if(ku && kr) dir = Dir.UP_RIGHT;
-			if(kr && kd) dir = Dir.RIGHT_DOWN;
-			if(kd && kl) dir = Dir.DOWN_LEFT;
-			if(kl && ku) dir = Dir.LEFT_UP;
+			if(!ku && !kr && !kd && !kl){
+				myTank.setMoveing(false);
+			} else {
+				if(ku) myTank.setDir(Dir.UP);
+				if(kr) myTank.setDir(Dir.RIGHT);
+				if(kd) myTank.setDir(Dir.DOWN);
+				if(kl) myTank.setDir(Dir.LEFT);
+				if(ku && kr) myTank.setDir(Dir.UP_RIGHT);
+				if(kr && kd) myTank.setDir(Dir.RIGHT_DOWN);
+				if(kd && kl) myTank.setDir(Dir.DOWN_LEFT);
+				if(kl && ku) myTank.setDir(Dir.LEFT_UP);
+				myTank.setMoveing(true);
+			}
 		}
 	}
 
