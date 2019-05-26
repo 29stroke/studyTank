@@ -6,20 +6,29 @@ public class Tank {
     private int x = 200;
     private int y = 200;
     private Dir dir = Dir.UP;
+    private TankFrame tf = null;
+    private boolean moveing = false;
     private static final int WIDTH = 50;
     private static final int HEIGHT = 50;
     private static final int SPEED = 5;
-    private boolean moveing = false;
 
-    public Tank(int x, int y, Dir dir){
+    public Tank(int x, int y, Dir dir, TankFrame tf){
         this.x = x;
         this.y = y;
         this.dir = dir;
+        this.tf = tf;
     }
 
     public void paint(Graphics g){
+        Color bakColor = g.getColor();
+        g.setColor(Color.BLUE);
         g.fillRect(x, y, WIDTH, HEIGHT);
+        g.setColor(bakColor);
         move();
+    }
+
+    public void fire(){
+        tf.getBulletList().add(new Bullet(x+20, y+20, dir, tf));
     }
 
     private void move(){
