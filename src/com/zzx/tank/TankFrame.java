@@ -10,6 +10,9 @@ import java.awt.event.WindowEvent;
 public class TankFrame extends Frame{
 	int x = 200;
 	int y = 200;
+	Dir dir = Dir.UP;
+	private static final int speed = 10;
+
 	public TankFrame(){
 		setSize(800, 600);
 		setResizable(false);
@@ -28,7 +31,7 @@ public class TankFrame extends Frame{
 	
 	@Override
 	public void paint(Graphics g){
-		System.out.println("go");
+		//System.out.println("go");
 		g.fillRect(x, y, 50, 50);
 		//x += 10;
 		//y += 10;
@@ -45,37 +48,56 @@ public class TankFrame extends Frame{
 		public void keyPressed(KeyEvent e) {
 			int key = e.getKeyCode();
 			switch (key) {
-			case KeyEvent.VK_UP:
-				ku = true;
-				break;
-			case KeyEvent.VK_DOWN:
-				kd = true;
-				break;
-			case KeyEvent.VK_LEFT:
-				kl = true;
-				break;
-			case KeyEvent.VK_RIGHT:
-				kr = true;
-				break;
-			default:
-				break;
+				case KeyEvent.VK_UP:
+					ku = true;
+					break;
+				case KeyEvent.VK_DOWN:
+					kd = true;
+					break;
+				case KeyEvent.VK_LEFT:
+					kl = true;
+					break;
+				case KeyEvent.VK_RIGHT:
+					kr = true;
+					break;
+				default:
+					break;
 			}
-			
-			if (ku){
-				y -= 10;
-			};
-			
-			if (kd){
-				y += 10;
-			};
-			
-			if (kl){
-				x -= 10;
-			};
-			
-			if (kr){
-				x += 10;
-			};
+
+			setMainTankDir();
+
+			switch (dir) {
+				case UP:
+					y -= speed;
+					break;
+				case RIGHT:
+					x += speed;
+					break;
+				case DOWN:
+					y += speed;
+					break;
+				case LEFT:
+					x -= speed;
+					break;
+				case UP_RIGHT:
+					y -= speed;
+					x += speed;
+					break;
+				case RIGHT_DOWN:
+					x += speed;
+					y += speed;
+					break;
+				case DOWN_LEFT:
+					y += speed;
+					x -= speed;
+					break;
+				case LEFT_UP:
+					x -= speed;
+					y -= speed;
+					break;
+				default:
+					break;
+			}
 		}
 
 		@Override
@@ -97,6 +119,19 @@ public class TankFrame extends Frame{
 			default:
 				break;
 			}
+
+			setMainTankDir();
+		}
+
+		private void setMainTankDir(){
+			if(ku) dir = Dir.UP;
+			if(kr) dir = Dir.RIGHT;
+			if(kd) dir = Dir.DOWN;
+			if(kl) dir = Dir.LEFT;
+			if(ku && kr) dir = Dir.UP_RIGHT;
+			if(kr && kd) dir = Dir.RIGHT_DOWN;
+			if(kd && kl) dir = Dir.DOWN_LEFT;
+			if(kl && ku) dir = Dir.LEFT_UP;
 		}
 	}
 
