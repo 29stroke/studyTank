@@ -9,8 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TankFrame extends Frame{
-	private Tank myTank = new Tank(200, 200, Dir.UP, this);
-	private List<Bullet> bulletList = new ArrayList<Bullet>(10);
+	private Tank myTank = new Tank(200, 200, Dir.UP, this, Group.GOOD);
+	private List<Bullet> bulletList = new ArrayList<Bullet>(50);
+	private List<Tank> badTankList = new ArrayList<Tank>(10);
 	private static final int GAME_WIDTH = 800;
 	private static final int GAME_HEIGHT = 600;
 
@@ -50,15 +51,27 @@ public class TankFrame extends Frame{
 	public void paint(Graphics g){
 		Color bakColor = g.getColor();
 		g.setColor(Color.WHITE);
-		g.drawString("子弹的数量：" + bulletList.size(), 10, 40);
+		g.drawString("子弹数量：" + bulletList.size(), 10, 40);
+		g.drawString("敌军数量：" + badTankList.size(), 10, 55);
 		g.setColor(bakColor);
 
 		myTank.paint(g);
+		for (int i=0; i<badTankList.size(); i++){
+			badTankList.get(i).paint(g);
+
+		}
 //		for(Bullet bullet:bulletList){
 //			bullet.paint(g);
 //		}
 		for(int i=0; i< bulletList.size(); i++){
 			bulletList.get(i).paint(g);
+		}
+
+		//碰撞检测
+		for(int i=0; i<badTankList.size(); i++){
+			for(int j=0; j<bulletList.size(); j++){
+				bulletList.get(j).collideWith(badTankList.get(i), g);
+			}
 		}
 	}
 
@@ -72,6 +85,15 @@ public class TankFrame extends Frame{
 
 	public static int getGameHeight() {
 		return GAME_HEIGHT;
+	}
+
+
+	public void addBadTankList(Tank badTank) {
+		this.badTankList.add(badTank);
+	}
+
+	public List<Tank> getBadTankList() {
+		return badTankList;
 	}
 
 	class myKeyListener extends KeyAdapter{

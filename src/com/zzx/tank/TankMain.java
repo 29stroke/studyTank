@@ -17,7 +17,11 @@ public class TankMain {
 //			}
 //		});
 		TankFrame tf = new TankFrame();
-		
+		for(int i=0; i<5; i++){
+			Tank badTank = new Tank(50 + i*60, 400, Dir.UP, tf, Group.BAD);
+			badTank.setMoveing(true);
+			tf.addBadTankList(badTank);
+		}
 		while(true){
 			Thread.sleep(50);
 			tf.repaint();
