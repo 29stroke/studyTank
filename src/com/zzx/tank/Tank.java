@@ -11,7 +11,7 @@ public class Tank {
     private boolean moveing = false;
     public int WIDTH;
     public int HEIGHT;
-    public static final int SPEED = 1;
+    public static final int SPEED = 5;
     private boolean live = true;
     private Random random = new Random();
     private Group group;
@@ -119,7 +119,76 @@ public class Tank {
                 default:
                     break;
             }
+
+            if(this.getX()>tf.getGameWidth()-this.WIDTH || this.getY()>tf.getGameHeight()-this.HEIGHT||
+                    this.getX()<this.WIDTH || this.getY()<this.HEIGHT){
+                switch (dir) {
+                    case UP:
+                        this.setDir(Dir.DOWN);
+                        break;
+                    case RIGHT:
+                        this.setDir(Dir.LEFT);
+                        break;
+                    case DOWN:
+                        this.setDir(Dir.UP);
+                        break;
+                    case LEFT:
+                        this.setDir(Dir.RIGHT);
+                        break;
+                    case UP_RIGHT:
+                        this.setDir(Dir.DOWN_LEFT);
+                        break;
+                    case RIGHT_DOWN:
+                        this.setDir(Dir.LEFT_UP);
+                        break;
+                    case DOWN_LEFT:
+                        this.setDir(Dir.UP_RIGHT);
+                        break;
+                    case LEFT_UP:
+                        this.setDir(Dir.RIGHT_DOWN);
+                        break;
+                    default:
+                        break;
+                }
+            }
+
             if(random.nextInt(10)>8) this.fire();
+        }
+    }
+
+    public void randomDir(){
+        if(random.nextInt(100) > 98){
+            int dirInt = random.nextInt(8);
+            Dir newDir = this.getDir();
+            switch (dirInt) {
+                case 1:
+                    newDir = Dir.UP;
+                    break;
+                case 3:
+                    newDir = Dir.RIGHT;
+                    break;
+                case 5:
+                    newDir = Dir.DOWN;
+                    break;
+                case 7:
+                    newDir = Dir.LEFT;
+                    break;
+                case 2:
+                    newDir = Dir.UP_RIGHT;
+                    break;
+                case 4:
+                    newDir = Dir.RIGHT_DOWN;
+                    break;
+                case 6:
+                    newDir = Dir.DOWN_LEFT;
+                    break;
+                case 8:
+                    newDir = Dir.LEFT_UP;
+                    break;
+                default:
+                    break;
+            }
+            this.setDir(newDir);
         }
     }
 

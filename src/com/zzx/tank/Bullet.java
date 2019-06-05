@@ -1,7 +1,6 @@
 package com.zzx.tank;
 
 import java.awt.*;
-import java.awt.image.BufferedImage;
 
 public class Bullet {
     private int x;
@@ -117,9 +116,6 @@ public class Bullet {
         if(rectBullet.intersects(rectTank)){
             this.setLive(false);
             tank.setLive(false);
-            for(BufferedImage explode:ResourceManage.explodes){
-                g.drawImage(explode, tank.getX(), tank.getY(), null);
-            }
         }
     }
 

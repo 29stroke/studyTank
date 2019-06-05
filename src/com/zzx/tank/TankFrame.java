@@ -7,6 +7,7 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class TankFrame extends Frame{
 	private Tank myTank = new Tank(200, 200, Dir.UP, this, Group.GOOD);
@@ -14,6 +15,8 @@ public class TankFrame extends Frame{
 	private List<Tank> badTankList = new ArrayList<Tank>(10);
 	private static final int GAME_WIDTH = 800;
 	private static final int GAME_HEIGHT = 600;
+	private Exblode exblode = new Exblode(200, 400, this);
+	private Random radnom = new Random();
 
 	public TankFrame(){
 		setSize(GAME_WIDTH, GAME_HEIGHT);
@@ -57,8 +60,8 @@ public class TankFrame extends Frame{
 
 		myTank.paint(g);
 		for (int i=0; i<badTankList.size(); i++){
+            badTankList.get(i).randomDir();
 			badTankList.get(i).paint(g);
-
 		}
 //		for(Bullet bullet:bulletList){
 //			bullet.paint(g);
@@ -70,9 +73,12 @@ public class TankFrame extends Frame{
 		//碰撞检测
 		for(int i=0; i<badTankList.size(); i++){
 			for(int j=0; j<bulletList.size(); j++){
+
 				bulletList.get(j).collideWith(badTankList.get(i), g);
 			}
 		}
+
+        exblode.paint(g);
 	}
 
 	public List getBulletList(){
