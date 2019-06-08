@@ -15,8 +15,8 @@ public class TankFrame extends Frame{
 	private List<Tank> badTankList = new ArrayList<Tank>(10);
 	private static final int GAME_WIDTH = 800;
 	private static final int GAME_HEIGHT = 600;
-	private Exblode exblode = new Exblode(200, 400, this);
-	private Random radnom = new Random();
+	private List<Exblode> exblodeList = new ArrayList<Exblode>();
+	private Random random = new Random();
 
 	public TankFrame(){
 		setSize(GAME_WIDTH, GAME_HEIGHT);
@@ -56,11 +56,12 @@ public class TankFrame extends Frame{
 		g.setColor(Color.WHITE);
 		g.drawString("子弹数量：" + bulletList.size(), 10, 40);
 		g.drawString("敌军数量：" + badTankList.size(), 10, 55);
+		g.drawString("爆炸数量：" + exblodeList.size(), 10, 70);
 		g.setColor(bakColor);
 
 		myTank.paint(g);
 		for (int i=0; i<badTankList.size(); i++){
-            badTankList.get(i).randomDir();
+			badTankList.get(i).randomDir();
 			badTankList.get(i).paint(g);
 		}
 //		for(Bullet bullet:bulletList){
@@ -73,12 +74,56 @@ public class TankFrame extends Frame{
 		//碰撞检测
 		for(int i=0; i<badTankList.size(); i++){
 			for(int j=0; j<bulletList.size(); j++){
-
 				bulletList.get(j).collideWith(badTankList.get(i), g);
 			}
 		}
 
-        exblode.paint(g);
+		for(int i=0; i< exblodeList.size(); i++){
+			exblodeList.get(i).paint(g);
+		}
+
+		if(badTankList.size()==0){
+			int addBadTankCount = random.nextInt(10);
+			for(int i=0; i< addBadTankCount; i++){
+				int badX = random.nextInt(700) + 50;
+				int badY = random.nextInt(500) + 50;
+				int dirInt = random.nextInt(8);
+				Dir badDir = Dir.UP;
+				switch (dirInt) {
+					case 1:
+						badDir = Dir.UP;
+						break;
+					case 3:
+						badDir = Dir.RIGHT;
+						break;
+					case 5:
+						badDir = Dir.DOWN;
+						break;
+					case 7:
+						badDir = Dir.LEFT;
+						break;
+					case 2:
+						badDir = Dir.UP_RIGHT;
+						break;
+					case 4:
+						badDir = Dir.RIGHT_DOWN;
+						break;
+					case 6:
+						badDir = Dir.DOWN_LEFT;
+						break;
+					case 8:
+						badDir = Dir.LEFT_UP;
+						break;
+					default:
+						break;
+				}
+
+				// 位置重叠问题待解决
+				Tank badTank = new Tank(badX, badY, badDir, this, Group.BAD);
+				badTank.setMoveing(true);
+				badTankList.add(badTank);
+			}
+		}
 	}
 
 	public List getBulletList(){
@@ -93,6 +138,14 @@ public class TankFrame extends Frame{
 		return GAME_HEIGHT;
 	}
 
+
+	public void addExblodeList(Exblode exblode) {
+		this.exblodeList.add(exblode);
+	}
+
+	public List<Exblode> getExblodeList() {
+		return exblodeList;
+	}
 
 	public void addBadTankList(Tank badTank) {
 		this.badTankList.add(badTank);

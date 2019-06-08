@@ -116,6 +116,7 @@ public class Bullet {
         if(rectBullet.intersects(rectTank)){
             this.setLive(false);
             tank.setLive(false);
+            tf.addExblodeList(new Exblode(tank.getX(), tank.getY(), tf));
         }
     }
 

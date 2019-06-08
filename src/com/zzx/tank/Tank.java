@@ -121,7 +121,7 @@ public class Tank {
             }
 
             if(this.getX()>tf.getGameWidth()-this.WIDTH || this.getY()>tf.getGameHeight()-this.HEIGHT||
-                    this.getX()<this.WIDTH || this.getY()<this.HEIGHT){
+                    this.getX()<0 || this.getY()<0){
                 switch (dir) {
                     case UP:
                         this.setDir(Dir.DOWN);
@@ -152,7 +152,7 @@ public class Tank {
                 }
             }
 
-            if(random.nextInt(10)>8) this.fire();
+            if(this.group==Group.BAD && random.nextInt(10)>8) this.fire();
         }
     }
 

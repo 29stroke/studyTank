@@ -20,7 +20,7 @@ public class TankMain {
 //		});
 		TankFrame tf = new TankFrame();
 		Random random = new Random();
-		for(int i=0; i<5; i++){
+		for(int i=0; i<10; i++){
 			int badX = random.nextInt(700) + 50;
 			int badY = random.nextInt(500) + 50;
 			int dirInt = random.nextInt(8);
