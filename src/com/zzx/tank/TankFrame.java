@@ -61,7 +61,6 @@ public class TankFrame extends Frame{
 
 		myTank.paint(g);
 		for (int i=0; i<badTankList.size(); i++){
-			badTankList.get(i).randomDir();
 			badTankList.get(i).paint(g);
 		}
 //		for(Bullet bullet:bulletList){
@@ -87,36 +86,7 @@ public class TankFrame extends Frame{
 			for(int i=0; i< addBadTankCount; i++){
 				int badX = random.nextInt(700) + 50;
 				int badY = random.nextInt(500) + 50;
-				int dirInt = random.nextInt(8);
-				Dir badDir = Dir.UP;
-				switch (dirInt) {
-					case 1:
-						badDir = Dir.UP;
-						break;
-					case 3:
-						badDir = Dir.RIGHT;
-						break;
-					case 5:
-						badDir = Dir.DOWN;
-						break;
-					case 7:
-						badDir = Dir.LEFT;
-						break;
-					case 2:
-						badDir = Dir.UP_RIGHT;
-						break;
-					case 4:
-						badDir = Dir.RIGHT_DOWN;
-						break;
-					case 6:
-						badDir = Dir.DOWN_LEFT;
-						break;
-					case 8:
-						badDir = Dir.LEFT_UP;
-						break;
-					default:
-						break;
-				}
+				Dir badDir = Dir.values()[random.nextInt(8)];
 
 				// 位置重叠问题待解决
 				Tank badTank = new Tank(badX, badY, badDir, this, Group.BAD);
@@ -183,6 +153,8 @@ public class TankFrame extends Frame{
 			}
 
 			setMainTankDir();
+			// 好吵
+			// new Thread(()->new Audio("audio/tank_move.wav").play()).start();
 		}
 
 		@Override

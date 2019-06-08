@@ -83,6 +83,7 @@ public class Tank {
         }
 
         tf.getBulletList().add(new Bullet(bulletX, bulletY, dir, tf, group));
+        if(this.group == Group.GOOD) new Thread(()->new Audio("audio/tank_fire.wav").play()).start();
     }
 
     private void move(){
@@ -152,44 +153,15 @@ public class Tank {
                 }
             }
 
-            if(this.group==Group.BAD && random.nextInt(10)>8) this.fire();
+            if(this.group==Group.BAD){
+                if(random.nextInt(30)>28) this.fire();
+                if(random.nextInt(100) > 98) this.randomDir();
+            }
         }
     }
 
     public void randomDir(){
-        if(random.nextInt(100) > 98){
-            int dirInt = random.nextInt(8);
-            Dir newDir = this.getDir();
-            switch (dirInt) {
-                case 1:
-                    newDir = Dir.UP;
-                    break;
-                case 3:
-                    newDir = Dir.RIGHT;
-                    break;
-                case 5:
-                    newDir = Dir.DOWN;
-                    break;
-                case 7:
-                    newDir = Dir.LEFT;
-                    break;
-                case 2:
-                    newDir = Dir.UP_RIGHT;
-                    break;
-                case 4:
-                    newDir = Dir.RIGHT_DOWN;
-                    break;
-                case 6:
-                    newDir = Dir.DOWN_LEFT;
-                    break;
-                case 8:
-                    newDir = Dir.LEFT_UP;
-                    break;
-                default:
-                    break;
-            }
-            this.setDir(newDir);
-        }
+        this.setDir(Dir.values()[random.nextInt(8)]);
     }
 
     public Dir getDir() {
