@@ -9,8 +9,8 @@ public class Tank {
     private Dir dir = Dir.UP;
     private TankFrame tf = null;
     private boolean moveing = false;
-    public int WIDTH = ResourceManage.tankU.getWidth();
-    public int HEIGHT = ResourceManage.tankU.getHeight();
+    public int WIDTH = ResourceManage.goodTankU.getWidth();
+    public int HEIGHT = ResourceManage.goodTankU.getHeight();
     public static final int SPEED = 5;
     private boolean live = true;
     private Random random = new Random();
@@ -46,28 +46,28 @@ public class Tank {
 //            }
             switch (dir) {
                 case UP:
-                    g.drawImage(ResourceManage.tankU, x, y, null);
+                    g.drawImage(this.group==Group.GOOD ? ResourceManage.goodTankU : ResourceManage.badTankU, x, y, null);
                     break;
                 case RIGHT:
-                    g.drawImage(ResourceManage.tankR, x, y, null);
+                    g.drawImage(this.group==Group.GOOD ? ResourceManage.goodTankR : ResourceManage.badTankR, x, y, null);
                     break;
                 case DOWN:
-                    g.drawImage(ResourceManage.tankD, x, y, null);
+                    g.drawImage(this.group==Group.GOOD ? ResourceManage.goodTankD : ResourceManage.badTankD, x, y, null);
                     break;
                 case LEFT:
-                    g.drawImage(ResourceManage.tankL, x, y, null);
+                    g.drawImage(this.group==Group.GOOD ? ResourceManage.goodTankL : ResourceManage.badTankL, x, y, null);
                     break;
                 case UP_RIGHT:
-                    g.drawImage(ResourceManage.tankRU, x, y, null);
+                    g.drawImage(this.group==Group.GOOD ? ResourceManage.goodTankRU : ResourceManage.badTankRU, x, y, null);
                     break;
                 case RIGHT_DOWN:
-                    g.drawImage(ResourceManage.tankRD, x, y, null);
+                    g.drawImage(this.group==Group.GOOD ? ResourceManage.goodTankRD : ResourceManage.badTankRD, x, y, null);
                     break;
                 case DOWN_LEFT:
-                    g.drawImage(ResourceManage.tankLD, x, y, null);
+                    g.drawImage(this.group==Group.GOOD ? ResourceManage.goodTankLD : ResourceManage.badTankLD, x, y, null);
                     break;
                 case LEFT_UP:
-                    g.drawImage(ResourceManage.tankLU, x, y, null);
+                    g.drawImage(this.group==Group.GOOD ? ResourceManage.goodTankLU : ResourceManage.badTankLU, x, y, null);
                     break;
                 default:
                     break;

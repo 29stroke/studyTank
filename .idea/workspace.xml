@@ -14,24 +14,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/zzx/tank/Tank.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="135" column="32" lean-forward="true" selection-start-line="135" selection-start-column="32" selection-end-line="135" selection-end-column="32" />
+            <state relative-caret-position="137">
+              <caret line="48" column="42" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3056#3956#0" />
                 <element signature="e#6005#6006#0" expanded="true" />
                 <element signature="e#6065#6066#0" expanded="true" />
-                <element signature="e#6209#6210#0" expanded="true" />
-                <element signature="e#6274#6275#0" expanded="true" />
-                <element signature="e#6338#6339#0" expanded="true" />
-                <element signature="e#6411#6412#0" expanded="true" />
-                <element signature="e#6496#6497#0" expanded="true" />
-                <element signature="e#6545#6546#0" expanded="true" />
-                <element signature="e#6594#6595#0" expanded="true" />
-                <element signature="e#6653#6654#0" expanded="true" />
+                <element signature="e#6649#6650#0" expanded="true" />
+                <element signature="e#6714#6715#0" expanded="true" />
+                <element signature="e#6778#6779#0" expanded="true" />
+                <element signature="e#6851#6852#0" expanded="true" />
+                <element signature="e#6936#6937#0" expanded="true" />
+                <element signature="e#6985#6986#0" expanded="true" />
+                <element signature="e#7034#7035#0" expanded="true" />
+                <element signature="e#7093#7094#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,8 +53,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/zzx/tank/TankFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="199" column="13" lean-forward="true" selection-start-line="199" selection-start-column="13" selection-end-line="199" selection-end-column="13" />
+            <state relative-caret-position="-1938">
+              <caret line="12" column="69" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3369#3370#0" expanded="true" />
@@ -89,17 +89,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/zzx/tank/TankMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
+            <state relative-caret-position="-27">
               <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/zzx/tank/ResourceManage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="65" column="25" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="25" />
+            <state relative-caret-position="357">
+              <caret line="55" column="111" selection-start-line="55" selection-start-column="103" selection-end-line="55" selection-end-column="111" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -140,13 +140,13 @@
         <option value="$PROJECT_DIR$/src/com/zzx/tank/Dir.java" />
         <option value="$PROJECT_DIR$/src/com/zzx/tank/Group.java" />
         <option value="$PROJECT_DIR$/src/com/zzx/tank/ImageUtil.java" />
-        <option value="$PROJECT_DIR$/src/com/zzx/tank/ResourceManage.java" />
         <option value="$PROJECT_DIR$/src/com/zzx/tank/Audio.java" />
         <option value="$PROJECT_DIR$/src/com/zzx/tank/TankFrame.java" />
         <option value="$PROJECT_DIR$/src/com/zzx/tank/TankMain.java" />
         <option value="$PROJECT_DIR$/src/com/zzx/tank/Exblode.java" />
         <option value="$PROJECT_DIR$/src/com/zzx/tank/Bullet.java" />
         <option value="$PROJECT_DIR$/src/com/zzx/tank/Tank.java" />
+        <option value="$PROJECT_DIR$/src/com/zzx/tank/ResourceManage.java" />
       </list>
     </option>
   </component>
@@ -191,7 +191,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559983218782" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559984082369" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/images" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -264,12 +264,12 @@
       <workItem from="1559773230077" duration="4416000" />
       <workItem from="1559823026771" duration="1322000" />
       <workItem from="1559858145766" duration="6457000" />
-      <workItem from="1559973900674" duration="8375000" />
+      <workItem from="1559973900674" duration="9330000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68619000" />
+    <option name="totallyTimeSpent" value="69574000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
@@ -284,7 +284,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.5011442" side_tool="true" weight="0.18730159" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49920633" weight="0.22580644" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49920633" visible="true" weight="0.22580644" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39938557" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -480,36 +480,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zzx/tank/TankMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zzx/tank/ResourceManage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="65" column="25" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zzx/tank/TankFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="199" column="13" lean-forward="true" selection-start-line="199" selection-start-column="13" selection-end-line="199" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3369#3370#0" expanded="true" />
-            <element signature="e#3405#3406#0" expanded="true" />
-            <element signature="method#keyReleased#0;class#myKeyListener#0;class#TankFrame#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zzx/tank/Bullet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2436">
@@ -521,23 +491,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zzx/tank/TankFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1938">
+          <caret line="12" column="69" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3369#3370#0" expanded="true" />
+            <element signature="e#3405#3406#0" expanded="true" />
+            <element signature="method#keyReleased#0;class#myKeyListener#0;class#TankFrame#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zzx/tank/TankMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-27">
+          <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zzx/tank/Tank.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="135" column="32" lean-forward="true" selection-start-line="135" selection-start-column="32" selection-end-line="135" selection-end-column="32" />
+        <state relative-caret-position="137">
+          <caret line="48" column="42" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3056#3956#0" />
             <element signature="e#6005#6006#0" expanded="true" />
             <element signature="e#6065#6066#0" expanded="true" />
-            <element signature="e#6209#6210#0" expanded="true" />
-            <element signature="e#6274#6275#0" expanded="true" />
-            <element signature="e#6338#6339#0" expanded="true" />
-            <element signature="e#6411#6412#0" expanded="true" />
-            <element signature="e#6496#6497#0" expanded="true" />
-            <element signature="e#6545#6546#0" expanded="true" />
-            <element signature="e#6594#6595#0" expanded="true" />
-            <element signature="e#6653#6654#0" expanded="true" />
+            <element signature="e#6649#6650#0" expanded="true" />
+            <element signature="e#6714#6715#0" expanded="true" />
+            <element signature="e#6778#6779#0" expanded="true" />
+            <element signature="e#6851#6852#0" expanded="true" />
+            <element signature="e#6936#6937#0" expanded="true" />
+            <element signature="e#6985#6986#0" expanded="true" />
+            <element signature="e#7034#7035#0" expanded="true" />
+            <element signature="e#7093#7094#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zzx/tank/ResourceManage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="55" column="111" selection-start-line="55" selection-start-column="103" selection-end-line="55" selection-end-column="111" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
