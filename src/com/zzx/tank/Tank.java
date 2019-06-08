@@ -9,8 +9,8 @@ public class Tank {
     private Dir dir = Dir.UP;
     private TankFrame tf = null;
     private boolean moveing = false;
-    public int WIDTH;
-    public int HEIGHT;
+    public int WIDTH = ResourceManage.tankU.getWidth();
+    public int HEIGHT = ResourceManage.tankU.getHeight();
     public static final int SPEED = 5;
     private boolean live = true;
     private Random random = new Random();
@@ -30,13 +30,15 @@ public class Tank {
             //g.setColor(Color.BLUE);
             //g.fillRect(x, y, WIDTH, HEIGHT);
             //g.setColor(bakColor);
-            if (Dir.UP == dir || Dir.DOWN == dir || Dir.LEFT == dir || Dir.RIGHT == dir){
-                WIDTH = ResourceManage.tankU.getWidth();
-                HEIGHT = ResourceManage.tankU.getHeight();
-            } else {
-                WIDTH = ResourceManage.tankRU.getWidth();
-                HEIGHT = ResourceManage.tankRU.getHeight();
-            }
+
+            // 使用新坦克图片后不需要这个操作
+//            if (Dir.UP == dir || Dir.DOWN == dir || Dir.LEFT == dir || Dir.RIGHT == dir){
+//                WIDTH = ResourceManage.tankU.getWidth();
+//                HEIGHT = ResourceManage.tankU.getHeight();
+//            } else {
+//                WIDTH = ResourceManage.tankRU.getWidth();
+//                HEIGHT = ResourceManage.tankRU.getHeight();
+//            }
             switch (dir) {
                 case UP:
                     g.drawImage(ResourceManage.tankU, x, y, null);
@@ -72,18 +74,20 @@ public class Tank {
     }
 
     public void fire(){
-        int bulletX = 0;
-        int bulletY = 0;
-        if (Dir.UP == dir || Dir.DOWN == dir || Dir.LEFT == dir || Dir.RIGHT == dir){
-            bulletX = this.x + this.WIDTH/2 - ResourceManage.bulletU.getWidth()/2;
-            bulletY = this.y + this.HEIGHT/2 - ResourceManage.bulletU.getHeight()/2;
-        } else {
-            bulletX = this.x + this.WIDTH/2 - ResourceManage.missileRU.getWidth()/2;
-            bulletY = this.y + this.HEIGHT/2 - ResourceManage.missileRU.getHeight()/2;
-        }
+        int bulletX = this.x + this.WIDTH/2 - ResourceManage.bulletU.getWidth()/2;
+        int bulletY = this.y + this.HEIGHT/2 - ResourceManage.bulletU.getHeight()/2;
+        // 使用新坦克图片后不需要这个操作
+//        if (Dir.UP == dir || Dir.DOWN == dir || Dir.LEFT == dir || Dir.RIGHT == dir){
+//            bulletX = this.x + this.WIDTH/2 - ResourceManage.bulletU.getWidth()/2;
+//            bulletY = this.y + this.HEIGHT/2 - ResourceManage.bulletU.getHeight()/2;
+//        } else {
+//            bulletX = this.x + this.WIDTH/2 - ResourceManage.missileRU.getWidth()/2;
+//            bulletY = this.y + this.HEIGHT/2 - ResourceManage.missileRU.getHeight()/2;
+//        }
 
         tf.getBulletList().add(new Bullet(bulletX, bulletY, dir, tf, group));
-        if(this.group == Group.GOOD) new Thread(()->new Audio("audio/tank_fire.wav").play()).start();
+        // 发射子弹音效 好吵
+        // if(this.group == Group.GOOD) new Thread(()->new Audio("audio/tank_fire.wav").play()).start();
     }
 
     private void move(){
@@ -151,11 +155,11 @@ public class Tank {
                     default:
                         break;
                 }
-            }
-
-            if(this.group==Group.BAD){
-                if(random.nextInt(30)>28) this.fire();
-                if(random.nextInt(100) > 98) this.randomDir();
+            } else {
+                if (this.group == Group.BAD) {
+                    if (random.nextInt(30) > 28) this.fire();
+                    if (random.nextInt(100) > 98) this.randomDir();
+                }
             }
         }
     }

@@ -114,9 +114,11 @@ public class Bullet {
         Rectangle rectBullet = new Rectangle(this.x, this.y, this.WIDTH, this.HEIGHT);
         Rectangle rectTank = new Rectangle(tank.getX(), tank.getY(), tank.WIDTH, tank.HEIGHT);
         if(rectBullet.intersects(rectTank)){
+            int exblodeX = tank.getX() + tank.WIDTH/2 - ResourceManage.explodes[0].getWidth()/2;
+            int exblodeY = tank.getY() + tank.HEIGHT/2 - ResourceManage.explodes[0].getHeight()/2;
             this.setLive(false);
             tank.setLive(false);
-            tf.addExblodeList(new Exblode(tank.getX(), tank.getY(), tf));
+            tf.addExblodeList(new Exblode(exblodeX, exblodeY, tf));
         }
     }
 
