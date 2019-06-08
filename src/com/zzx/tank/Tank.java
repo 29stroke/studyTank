@@ -15,6 +15,7 @@ public class Tank {
     private boolean live = true;
     private Random random = new Random();
     private Group group;
+    public Rectangle rectangle = new Rectangle();
 
     public Tank(int x, int y, Dir dir, TankFrame tf, Group group){
         this.x = x;
@@ -22,6 +23,10 @@ public class Tank {
         this.dir = dir;
         this.tf = tf;
         this.group = group;
+        this.rectangle.x = x;
+        this.rectangle.y = y;
+        this.rectangle.width = this.WIDTH;
+        this.rectangle.height = this .HEIGHT;
     }
 
     public void paint(Graphics g){
@@ -125,42 +130,52 @@ public class Tank {
                     break;
             }
 
-            if(this.getX()>tf.getGameWidth()-this.WIDTH || this.getY()>tf.getGameHeight()-this.HEIGHT||
-                    this.getX()<0 || this.getY()<0){
-                switch (dir) {
-                    case UP:
-                        this.setDir(Dir.DOWN);
-                        break;
-                    case RIGHT:
-                        this.setDir(Dir.LEFT);
-                        break;
-                    case DOWN:
-                        this.setDir(Dir.UP);
-                        break;
-                    case LEFT:
-                        this.setDir(Dir.RIGHT);
-                        break;
-                    case UP_RIGHT:
-                        this.setDir(Dir.DOWN_LEFT);
-                        break;
-                    case RIGHT_DOWN:
-                        this.setDir(Dir.LEFT_UP);
-                        break;
-                    case DOWN_LEFT:
-                        this.setDir(Dir.UP_RIGHT);
-                        break;
-                    case LEFT_UP:
-                        this.setDir(Dir.RIGHT_DOWN);
-                        break;
-                    default:
-                        break;
-                }
-            } else {
+            this.rectangle.x = x;
+            this.rectangle.y = y;
+
+            if (!boundsCheck()){
                 if (this.group == Group.BAD) {
                     if (random.nextInt(30) > 28) this.fire();
                     if (random.nextInt(100) > 98) this.randomDir();
                 }
             }
+        }
+    }
+
+    private boolean boundsCheck(){
+        if(this.getX()>tf.getGameWidth()-this.WIDTH || this.getY()>tf.getGameHeight()-this.HEIGHT||
+                this.getX()<0 || this.getY()<0){
+            switch (dir) {
+                case UP:
+                    this.setDir(Dir.DOWN);
+                    break;
+                case RIGHT:
+                    this.setDir(Dir.LEFT);
+                    break;
+                case DOWN:
+                    this.setDir(Dir.UP);
+                    break;
+                case LEFT:
+                    this.setDir(Dir.RIGHT);
+                    break;
+                case UP_RIGHT:
+                    this.setDir(Dir.DOWN_LEFT);
+                    break;
+                case RIGHT_DOWN:
+                    this.setDir(Dir.LEFT_UP);
+                    break;
+                case DOWN_LEFT:
+                    this.setDir(Dir.UP_RIGHT);
+                    break;
+                case LEFT_UP:
+                    this.setDir(Dir.RIGHT_DOWN);
+                    break;
+                default:
+                    break;
+            }
+            return true;
+        } else {
+            return false;
         }
     }
 

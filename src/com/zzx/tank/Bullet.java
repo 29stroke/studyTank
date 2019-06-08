@@ -6,13 +6,13 @@ public class Bullet {
     private int x;
     private int y;
     private Dir dir;
-    public int WIDTH;
-    public int HEIGHT;
+    public int WIDTH = ResourceManage.bulletU.getWidth();
+    public int HEIGHT = ResourceManage.bulletU.getHeight();
     private static final int SPEED = 10;
     private boolean live = true;
     private TankFrame tf;
     private Group group;
-
+    public Rectangle rectangle = new Rectangle();
 
     public Bullet(int x, int y, Dir dir, TankFrame tf, Group group) {
         this.x = x;
@@ -20,13 +20,19 @@ public class Bullet {
         this.dir = dir;
         this.tf = tf;
         this.group = group;
-        if (Dir.UP == dir || Dir.DOWN == dir || Dir.LEFT == dir || Dir.RIGHT == dir){
-            WIDTH = ResourceManage.bulletU.getWidth();
-            HEIGHT = ResourceManage.bulletU.getHeight();
-        } else {
-            WIDTH = ResourceManage.missileRU.getWidth();
-            HEIGHT = ResourceManage.missileRU.getHeight();
-        }
+        // 使用新子弹图片后不需要这个操作
+//        if (Dir.UP == dir || Dir.DOWN == dir || Dir.LEFT == dir || Dir.RIGHT == dir){
+//            WIDTH = ResourceManage.bulletU.getWidth();
+//            HEIGHT = ResourceManage.bulletU.getHeight();
+//        } else {
+//            WIDTH = ResourceManage.missileRU.getWidth();
+//            HEIGHT = ResourceManage.missileRU.getHeight();
+//        }
+
+        this.rectangle.x = this.x;
+        this.rectangle.y = this.y;
+        this.rectangle.width = this.WIDTH;
+        this.rectangle.height = this .HEIGHT;
     }
 
     public void paint(Graphics g){
@@ -103,6 +109,9 @@ public class Bullet {
                 break;
         }
 
+        this.rectangle.x = x;
+        this.rectangle.y = y;
+
         if(x<0 || y<0 || x>tf.getWidth() || y>tf.getHeight()){
             this.live = false;
         }
@@ -111,9 +120,7 @@ public class Bullet {
     public void collideWith(Tank tank, Graphics g){
         if(this.group == tank.getGroup()) return;
 
-        Rectangle rectBullet = new Rectangle(this.x, this.y, this.WIDTH, this.HEIGHT);
-        Rectangle rectTank = new Rectangle(tank.getX(), tank.getY(), tank.WIDTH, tank.HEIGHT);
-        if(rectBullet.intersects(rectTank)){
+        if(this.rectangle.intersects(tank.rectangle)){
             int exblodeX = tank.getX() + tank.WIDTH/2 - ResourceManage.explodes[0].getWidth()/2;
             int exblodeY = tank.getY() + tank.HEIGHT/2 - ResourceManage.explodes[0].getHeight()/2;
             this.setLive(false);
