@@ -17,6 +17,7 @@ public class TankFrame extends Frame{
 	private List<Tank> badTankList = new ArrayList<Tank>(10);
 	private List<Exblode> exblodeList = new ArrayList<Exblode>();
 	private Random random = new Random();
+	private int times = 1;
 
 	/**
 	 * 游戏窗口
@@ -63,9 +64,11 @@ public class TankFrame extends Frame{
 	public void paint(Graphics g){
 		Color bakColor = g.getColor();
 		g.setColor(Color.WHITE);
-		g.drawString("子弹数量：" + bulletList.size(), 10, 40);
-		g.drawString("敌军数量：" + badTankList.size(), 10, 55);
-		g.drawString("爆炸数量：" + exblodeList.size(), 10, 70);
+		g.drawString("子弹数量：" + bulletList.size(), 10, 45);
+		g.drawString("敌军数量：" + badTankList.size(), 10, 60);
+		g.drawString("爆炸数量：" + exblodeList.size(), 10, 75);
+		g.drawString("上左右下：wads", 10, 90);
+		g.drawString("射击：j", 10, 105);
 		g.setColor(bakColor);
 
 		// 己方坦克画出
@@ -95,7 +98,10 @@ public class TankFrame extends Frame{
 		// 敌方坦克消灭后坦克随机生成
 		if(badTankList.size()==0){
 			int badCount = Integer.valueOf((String)PropertyManage.getInstance().getValue("badRanCount"));
-			int addBadTankCount = random.nextInt(badCount);
+			if (times <= 10){
+				times = times + 1;
+			}
+			int addBadTankCount = random.nextInt(badCount)*times;
 			for(int i=0; i< addBadTankCount; i++){
 				int badX = random.nextInt(1020);
 				int badY = random.nextInt(660);
@@ -155,7 +161,7 @@ public class TankFrame extends Frame{
 			}
 
 			setMainTankDir();
-			// 好吵
+			// 坦克移动音效
 			// new Thread(()->new Audio("audio/tank_move.wav").play()).start();
 		}
 

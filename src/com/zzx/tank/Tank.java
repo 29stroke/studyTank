@@ -94,8 +94,8 @@ public class Tank {
 //        }
 
         tf.getBulletList().add(new Bullet(bulletX, bulletY, dir, tf, group));
-        // 发射子弹音效 好吵
-        // if(this.group == Group.GOOD) new Thread(()->new Audio("audio/tank_fire.wav").play()).start();
+        // 发射子弹音效
+        if(this.group == Group.GOOD) new Thread(()->new Audio("audio/tank_fire.wav").play()).start();
     }
 
     /**

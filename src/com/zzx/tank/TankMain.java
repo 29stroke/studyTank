@@ -6,8 +6,8 @@ import java.util.Random;
 public class TankMain {
 
 	public static void main(String[] args) throws Exception {
-		// 背景音乐 // 好吵
-		//new Thread(()->new Audio("audio/war1.wav").loop()).start();
+		// 背景音乐
+		new Thread(()->new Audio("audio/LastSurprise.wav").loop()).start();
 
 		// new游戏窗口
 		TankFrame tf = new TankFrame();

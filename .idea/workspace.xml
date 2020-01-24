@@ -1,9 +1,169 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c79bfd50-641f-486b-ab90-7b1c892dc338" name="Default Changelist" comment="" />
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="c79bfd50-641f-486b-ab90-7b1c892dc338" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/audio/explode.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/audio/tank_fire.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/audio/tank_move.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/audio/war1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/com/zzx/tank/Audio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/com/zzx/tank/Bullet$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/com/zzx/tank/Bullet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/com/zzx/tank/Dir.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/com/zzx/tank/Exblode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/com/zzx/tank/Group.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/com/zzx/tank/ImageUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/com/zzx/tank/PropertyManage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/com/zzx/tank/ResourceManage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/com/zzx/tank/Tank$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/com/zzx/tank/Tank.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/com/zzx/tank/TankFrame$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/com/zzx/tank/TankFrame$myKeyListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/com/zzx/tank/TankFrame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/com/zzx/tank/TankMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/10.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/7.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/8.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/9.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/BadTank1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/BadTank2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/GoodTank1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/GoodTank2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/bulletD.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/bulletL.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/bulletR.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/bulletU.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/bulletU.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/e1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/e10.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/e11.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/e12.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/e13.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/e14.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/e15.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/e16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/e2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/e3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/e4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/e5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/e6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/e7.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/e8.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/e9.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/missileLD.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/missileLU.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/missileRD.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/missileRU.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/square0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/square1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/square2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/square3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/square4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/square5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/square6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/tank.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/tankD.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/tankL.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/tankLD.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/tankLU.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/tankR.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/tankRD.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/tankRU.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/images/tankU.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/property/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/audio/explode.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/audio/tank_fire.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/audio/tank_move.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/audio/war1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/com/zzx/tank/Audio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/com/zzx/tank/Bullet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/com/zzx/tank/Dir.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/com/zzx/tank/Exblode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/com/zzx/tank/Group.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/com/zzx/tank/ImageUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/com/zzx/tank/PropertyManage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/com/zzx/tank/ResourceManage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/com/zzx/tank/Tank.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/com/zzx/tank/TankFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/com/zzx/tank/TankMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/10.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/7.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/8.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/9.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/BadTank1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/BadTank2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/GoodTank1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/GoodTank2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/bulletD.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/bulletL.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/bulletR.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/bulletU.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/bulletU.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/e1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/e10.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/e11.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/e12.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/e13.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/e14.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/e15.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/e16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/e2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/e3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/e4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/e5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/e6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/e7.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/e8.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/e9.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/missileLD.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/missileLU.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/missileRD.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/missileRU.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/square0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/square1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/square2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/square3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/square4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/square5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/square6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/tank.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/tankD.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/tankL.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/tankLD.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/tankLU.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/tankR.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/tankRD.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/tankRU.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/images/tankU.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/src/property/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/studyTank/studyTank.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zzx/tank/Exblode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zzx/tank/Exblode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zzx/tank/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zzx/tank/Tank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zzx/tank/TankFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zzx/tank/TankFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zzx/tank/TankMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zzx/tank/TankMain.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,9 +171,6 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="studyTank" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -23,98 +180,36 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>exblodeList</find>
-      <find>setMoveing</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="base-tank" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/com/zzx/tank/Dir.java" />
-        <option value="$PROJECT_DIR$/src/com/zzx/tank/Group.java" />
-        <option value="$PROJECT_DIR$/src/com/zzx/tank/ImageUtil.java" />
-        <option value="$PROJECT_DIR$/src/com/zzx/tank/Audio.java" />
-        <option value="$PROJECT_DIR$/src/com/zzx/tank/Exblode.java" />
-        <option value="$PROJECT_DIR$/src/com/zzx/tank/ResourceManage.java" />
-        <option value="$PROJECT_DIR$/src/property/config.property" />
-        <option value="$PROJECT_DIR$/src/com/zzx/tank/PropertyManage.java" />
-        <option value="$PROJECT_DIR$/src/com/zzx/tank/TankMain.java" />
-        <option value="$PROJECT_DIR$/src/com/zzx/tank/TankFrame.java" />
-        <option value="$PROJECT_DIR$/src/com/zzx/tank/Tank.java" />
-        <option value="$PROJECT_DIR$/src/com/zzx/tank/Bullet.java" />
-        <option value="$PROJECT_DIR$/src/property/config.properties" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="72" />
-    <option name="y" value="20" />
-    <option name="width" value="1284" />
-    <option name="height" value="728" />
-  </component>
+  <component name="ProjectId" id="1WpUGk1IU1BunU7H5xG4g5dQdwi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="studyTank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="studyTank" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="studyTank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="studyTank" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="studyTank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="studyTank" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tank" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="studyTank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="studyTank" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="property" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560083770573" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunManager">
     <configuration name="TankMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -133,8 +228,24 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.TankMain" />
+        <item itemvalue="Application.TankMain" />
+        <item itemvalue="Application.TankMain" />
+        <item itemvalue="Application.TankMain" />
+        <item itemvalue="Application.TankMain" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -164,147 +275,46 @@
       <workItem from="1560032408231" duration="2071000" />
       <workItem from="1560066117212" duration="10531000" />
       <workItem from="1560083825623" duration="1432000" />
+      <workItem from="1579845937308" duration="6767000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8645000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49880096" visible="true" weight="0.23253968" />
-      <window_info id="Structure" order="1" sideWeight="0.50119907" side_tool="true" weight="0.18730159" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.5011442" side_tool="true" weight="0.18730159" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49920633" weight="0.22580644" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39938557" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32104453" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50079364" side_tool="true" weight="0.359447" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32872504" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49880096" weight="0.23253968" />
-      <window_info id="Structure" order="1" sideWeight="0.50119907" side_tool="true" weight="0.18730159" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.5011442" side_tool="true" weight="0.18730159" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49920633" visible="true" weight="0.22580644" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39938557" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32104453" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50079364" side_tool="true" weight="0.359447" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32872504" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/zzx/tank/ResourceManage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/awt/Image.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2168">
-          <caret line="47" selection-start-line="47" selection-end-line="51" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zzx/tank/TankMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zzx/tank/PropertyManage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-          <folding>
-            <element signature="e#521#522#0" expanded="true" />
-            <element signature="e#552#553#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zzx/tank/TankFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zzx/tank/Bullet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="8" column="111" selection-start-line="8" selection-start-column="111" selection-end-line="8" selection-end-column="111" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/property/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zzx/tank/Tank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="112" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="112" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="372" y="1" key="CommitChangelistDialog2" timestamp="1579846024910">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="372" y="1" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1579846024910" />
+    <state width="1493" height="60" key="GridCell.Tab.0.bottom" timestamp="1579856406759">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="60" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579856406759" />
+    <state width="1493" height="60" key="GridCell.Tab.0.center" timestamp="1579856406759">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="60" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1579856406759" />
+    <state width="1493" height="60" key="GridCell.Tab.0.left" timestamp="1579856406758">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="60" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1579856406758" />
+    <state width="1493" height="60" key="GridCell.Tab.0.right" timestamp="1579856406759">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="60" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1579856406759" />
+    <state x="270" y="54" key="SettingsEditor" timestamp="1579856662232">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="270" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1579856662232" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1579856448062">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1579856448062" />
+    <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579846018436">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1579846018436" />
   </component>
   <component name="masterDetails">
     <states>
