@@ -1,10 +1,12 @@
 package com.zzx.tank;
 
+import com.zzx.tank.dto.ImageDto;
+
 import java.awt.*;
 
 public class Bullet {
-    public int WIDTH = ResourceManage.bulletU.getWidth();
-    public int HEIGHT = ResourceManage.bulletU.getHeight();
+    public int WIDTH = ResourceManage.getInstance().bullet.getUp().getWidth();
+    public int HEIGHT = ResourceManage.getInstance().bullet.getUp().getHeight();
     public Rectangle rectangle = new Rectangle();
     private static final int SPEED = Integer.valueOf((String)PropertyManage.getInstance().getValue("bulletSpeed"));
     private int x;
@@ -20,15 +22,6 @@ public class Bullet {
         this.dir = dir;
         this.tf = tf;
         this.group = group;
-        // 使用新子弹图片后不需要这个操作
-//        if (Dir.UP == dir || Dir.DOWN == dir || Dir.LEFT == dir || Dir.RIGHT == dir){
-//            WIDTH = ResourceManage.bulletU.getWidth();
-//            HEIGHT = ResourceManage.bulletU.getHeight();
-//        } else {
-//            WIDTH = ResourceManage.missileRU.getWidth();
-//            HEIGHT = ResourceManage.missileRU.getHeight();
-//        }
-
         this.rectangle.x = this.x;
         this.rectangle.y = this.y;
         this.rectangle.width = this.WIDTH;
@@ -40,35 +33,32 @@ public class Bullet {
      */
     public void paint(Graphics g){
         if (live){
-            //Color bakColor = g.getColor();
-            //g.setColor(Color.red);
-            //g.fillRect(x, y, WIDTH, HEIGHT);
-            //g.setColor(bakColor);
             // 根据方向画出子弹
+            ImageDto bullet = ResourceManage.getInstance().bullet;
             switch (dir) {
                 case UP:
-                    g.drawImage(ResourceManage.bulletU, x, y, null);
+                    g.drawImage(bullet.getUp(), x, y, null);
                     break;
                 case RIGHT:
-                    g.drawImage(ResourceManage.bulletR, x, y, null);
+                    g.drawImage(bullet.getRight(), x, y, null);
                     break;
                 case DOWN:
-                    g.drawImage(ResourceManage.bulletD, x, y, null);
+                    g.drawImage(bullet.getDown(), x, y, null);
                     break;
                 case LEFT:
-                    g.drawImage(ResourceManage.bulletL, x, y, null);
+                    g.drawImage(bullet.getLeft(), x, y, null);
                     break;
                 case UP_RIGHT:
-                    g.drawImage(ResourceManage.missileRU, x, y, null);
+                    g.drawImage(bullet.getRightUp(), x, y, null);
                     break;
                 case RIGHT_DOWN:
-                    g.drawImage(ResourceManage.missileRD, x, y, null);
+                    g.drawImage(bullet.getRightDown(), x, y, null);
                     break;
                 case DOWN_LEFT:
-                    g.drawImage(ResourceManage.missileLD, x, y, null);
+                    g.drawImage(bullet.getLeftDown(), x, y, null);
                     break;
                 case LEFT_UP:
-                    g.drawImage(ResourceManage.missileLU, x, y, null);
+                    g.drawImage(bullet.getLeftUp(), x, y, null);
                     break;
                 default:
                     break;
@@ -135,8 +125,8 @@ public class Bullet {
         if(this.group == tank.getGroup()) return;
         //碰撞后双方殒命
         if(this.rectangle.intersects(tank.rectangle)){
-            int exblodeX = tank.getX() + tank.WIDTH/2 - ResourceManage.explodes[0].getWidth()/2;
-            int exblodeY = tank.getY() + tank.HEIGHT/2 - ResourceManage.explodes[0].getHeight()/2;
+            int exblodeX = tank.getX() + tank.WIDTH/2 - ResourceManage.getInstance().explodes[0].getWidth()/2;
+            int exblodeY = tank.getY() + tank.HEIGHT/2 - ResourceManage.getInstance().explodes[0].getHeight()/2;
             this.setLive(false);
             tank.setLive(false);
             tf.getExblodeList().add(new Exblode(exblodeX, exblodeY, tf));

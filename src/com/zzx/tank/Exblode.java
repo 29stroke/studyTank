@@ -6,8 +6,8 @@ import com.zzx.tank.Audio;
 public class Exblode {
     private int x;
     private int y;
-    public int WIDTH = ResourceManage.explodes[0].getWidth();
-    public int HEIGHT = ResourceManage.explodes[0].getHeight();
+    public int WIDTH = ResourceManage.getInstance().explodes[0].getWidth();
+    public int HEIGHT = ResourceManage.getInstance().explodes[0].getHeight();
     private TankFrame tf;
     private int step = 0;
 
@@ -26,7 +26,7 @@ public class Exblode {
             tf.getExblodeList().remove(this);
         } else {
 
-            g.drawImage(ResourceManage.explodes[step], this.x, this.y, null);
+            g.drawImage(ResourceManage.getInstance().explodes[step], this.x, this.y, null);
             step++;
         }
     }

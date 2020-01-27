@@ -1,5 +1,7 @@
 package com.zzx.tank;
 
+import com.zzx.tank.FireBulletStrategy.*;
+
 import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
@@ -67,8 +69,13 @@ public class TankFrame extends Frame{
 		g.drawString("子弹数量：" + bulletList.size(), 10, 45);
 		g.drawString("敌军数量：" + badTankList.size(), 10, 60);
 		g.drawString("爆炸数量：" + exblodeList.size(), 10, 75);
-		g.drawString("上左右下：wads", 10, 90);
-		g.drawString("射击：j", 10, 105);
+		g.drawString("上左右下：WADS", 10, 90);
+		g.drawString("射击：J", 10, 105);
+		g.drawString("默认射击策略：Y", 10, 120);
+		g.drawString("连续射击策略：U", 10, 135);
+		g.drawString("八方射击策略：I", 10, 150);
+		g.drawString("方形射击策略：O", 10, 165);
+		g.drawString("清除射击策略：P", 10, 180);
 		g.setColor(bakColor);
 
 		// 己方坦克画出
@@ -159,8 +166,22 @@ public class TankFrame extends Frame{
 				default:
 					break;
 			}
-
 			setMainTankDir();
+
+
+			// 设置发射策略
+			if (KeyEvent.VK_U == key) {
+				myTank.setFireBulletStrategy(new FireBulletContinuousStrategy());
+			} else if (KeyEvent.VK_I == key) {
+				myTank.setFireBulletStrategy(new FireBulletAllDirectionsStrategy());
+			} else if (KeyEvent.VK_O == key) {
+				myTank.setFireBulletStrategy(new FireBulletSquaresStrategy());
+			} else if (KeyEvent.VK_P == key) {
+				myTank.setFireBulletStrategy(new FireBulletClearStrategy());
+			} else if (KeyEvent.VK_Y == key) {
+				myTank.setFireBulletStrategy(new FireBulletDefaultStrategy());
+			}
+
 			// 坦克移动音效
 			// new Thread(()->new Audio("audio/tank_move.wav").play()).start();
 		}

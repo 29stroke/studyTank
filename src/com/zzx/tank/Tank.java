@@ -1,11 +1,15 @@
 package com.zzx.tank;
 
+import com.zzx.tank.FireBulletStrategy.FireBulletDefaultStrategy;
+import com.zzx.tank.dto.ImageDto;
+import com.zzx.tank.FireBulletStrategy.FireBulletStrategy;
+
 import java.awt.*;
 import java.util.Random;
 
 public class Tank {
-    public int WIDTH = ResourceManage.goodTankU.getWidth();
-    public int HEIGHT = ResourceManage.goodTankU.getHeight();
+    public int WIDTH = ResourceManage.getInstance().goodTank.getUp().getWidth();
+    public int HEIGHT = ResourceManage.getInstance().goodTank.getUp().getHeight();
     public Rectangle rectangle = new Rectangle();
     private static final int SPEED = Integer.valueOf((String)PropertyManage.getInstance().getValue("tankSpeed"));
     private int x = 200;
@@ -16,6 +20,7 @@ public class Tank {
     private boolean live = true;
     private Random random = new Random();
     private Group group;
+    private FireBulletStrategy fireBulletStrategy = new FireBulletDefaultStrategy();
 
     public Tank(int x, int y, Dir dir, TankFrame tf, Group group){
         this.x = x;
@@ -34,39 +39,33 @@ public class Tank {
      */
     public void paint(Graphics g){
         if (live){
-            // 使用新坦克图片后不需要这个操作
-//            if (Dir.UP == dir || Dir.DOWN == dir || Dir.LEFT == dir || Dir.RIGHT == dir){
-//                WIDTH = ResourceManage.tankU.getWidth();
-//                HEIGHT = ResourceManage.tankU.getHeight();
-//            } else {
-//                WIDTH = ResourceManage.tankRU.getWidth();
-//                HEIGHT = ResourceManage.tankRU.getHeight();
-//            }
             // 根据方向画出坦克图片
+            ImageDto goodTank = ResourceManage.getInstance().goodTank;
+            ImageDto badTank = ResourceManage.getInstance().badTank;
             switch (dir) {
                 case UP:
-                    g.drawImage(this.group==Group.GOOD ? ResourceManage.goodTankU : ResourceManage.badTankU, x, y, null);
+                    g.drawImage(this.group==Group.GOOD ? goodTank.getUp() : badTank.getUp(), x, y, null);
                     break;
                 case RIGHT:
-                    g.drawImage(this.group==Group.GOOD ? ResourceManage.goodTankR : ResourceManage.badTankR, x, y, null);
+                    g.drawImage(this.group==Group.GOOD ? goodTank.getRight() : badTank.getRight(), x, y, null);
                     break;
                 case DOWN:
-                    g.drawImage(this.group==Group.GOOD ? ResourceManage.goodTankD : ResourceManage.badTankD, x, y, null);
+                    g.drawImage(this.group==Group.GOOD ? goodTank.getDown() : badTank.getDown(), x, y, null);
                     break;
                 case LEFT:
-                    g.drawImage(this.group==Group.GOOD ? ResourceManage.goodTankL : ResourceManage.badTankL, x, y, null);
+                    g.drawImage(this.group==Group.GOOD ? goodTank.getLeft() : badTank.getLeft(), x, y, null);
                     break;
                 case UP_RIGHT:
-                    g.drawImage(this.group==Group.GOOD ? ResourceManage.goodTankRU : ResourceManage.badTankRU, x, y, null);
+                    g.drawImage(this.group==Group.GOOD ? goodTank.getRightUp() : badTank.getRightUp(), x, y, null);
                     break;
                 case RIGHT_DOWN:
-                    g.drawImage(this.group==Group.GOOD ? ResourceManage.goodTankRD : ResourceManage.badTankRD, x, y, null);
+                    g.drawImage(this.group==Group.GOOD ? goodTank.getRightDown() : badTank.getRightDown(), x, y, null);
                     break;
                 case DOWN_LEFT:
-                    g.drawImage(this.group==Group.GOOD ? ResourceManage.goodTankLD : ResourceManage.badTankLD, x, y, null);
+                    g.drawImage(this.group==Group.GOOD ? goodTank.getLeftDown() : badTank.getLeftDown(), x, y, null);
                     break;
                 case LEFT_UP:
-                    g.drawImage(this.group==Group.GOOD ? ResourceManage.goodTankLU : ResourceManage.badTankLU, x, y, null);
+                    g.drawImage(this.group==Group.GOOD ? goodTank.getLeftUp() : badTank.getLeftUp(), x, y, null);
                     break;
                 default:
                     break;
@@ -82,19 +81,9 @@ public class Tank {
      * 发射子弹
      */
     public void fire(){
-        int bulletX = this.x + this.WIDTH/2 - ResourceManage.bulletU.getWidth()/2;
-        int bulletY = this.y + this.HEIGHT/2 - ResourceManage.bulletU.getHeight()/2;
-        // 使用新坦克图片后不需要这个操作
-//        if (Dir.UP == dir || Dir.DOWN == dir || Dir.LEFT == dir || Dir.RIGHT == dir){
-//            bulletX = this.x + this.WIDTH/2 - ResourceManage.bulletU.getWidth()/2;
-//            bulletY = this.y + this.HEIGHT/2 - ResourceManage.bulletU.getHeight()/2;
-//        } else {
-//            bulletX = this.x + this.WIDTH/2 - ResourceManage.missileRU.getWidth()/2;
-//            bulletY = this.y + this.HEIGHT/2 - ResourceManage.missileRU.getHeight()/2;
-//        }
-
-        tf.getBulletList().add(new Bullet(bulletX, bulletY, dir, tf, group));
-        // 发射子弹音效
+        // 设置发射子弹
+        fireBulletStrategy.fire(this);
+        // 设置子弹音效
         if(this.group == Group.GOOD) new Thread(()->new Audio("audio/tank_fire.wav").play()).start();
     }
 
@@ -221,5 +210,13 @@ public class Tank {
 
     public Group getGroup() {
         return group;
+    }
+
+    public TankFrame getTF() {
+        return tf;
+    }
+
+    public void setFireBulletStrategy(FireBulletStrategy strategy) {
+        this.fireBulletStrategy = strategy;
     }
 }
