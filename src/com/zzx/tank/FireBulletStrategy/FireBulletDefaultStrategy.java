@@ -13,7 +13,6 @@ public class FireBulletDefaultStrategy implements FireBulletStrategy {
     public void fire(Tank tank) {
         int bulletX = tank.getX() + tank.WIDTH/2 - ResourceManage.getInstance().bullet.getUp().getWidth()/2;
         int bulletY = tank.getY() + tank.HEIGHT/2 - ResourceManage.getInstance().bullet.getUp().getHeight()/2;
-        Bullet bullet = new Bullet(bulletX, bulletY, tank.getDir(), tank.getTF(), tank.getGroup());
-        tank.getTF().getBulletList().add(bullet);
+        new Bullet(bulletX, bulletY, tank.getDir(), tank.getTF(), tank.getGroup());
     }
 }

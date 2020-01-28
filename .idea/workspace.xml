@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c79bfd50-641f-486b-ab90-7b1c892dc338" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zzx/tank/FireBulletStrategy/FireBulletAllDirectionsStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zzx/tank/FireBulletStrategy/FireBulletClearStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zzx/tank/FireBulletStrategy/FireBulletContinuousStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zzx/tank/FireBulletStrategy/FireBulletDefaultStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zzx/tank/FireBulletStrategy/FireBulletSquaresStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zzx/tank/FireBulletStrategy/FireBulletStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zzx/tank/dto/ImageDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/zzx/tank/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zzx/tank/Bullet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zzx/tank/Exblode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zzx/tank/Exblode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zzx/tank/ResourceManage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zzx/tank/ResourceManage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zzx/tank/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zzx/tank/Tank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zzx/tank/TankFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zzx/tank/TankFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zzx/tank/FireBulletStrategy/FireBulletAllDirectionsStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zzx/tank/FireBulletStrategy/FireBulletAllDirectionsStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zzx/tank/FireBulletStrategy/FireBulletClearStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zzx/tank/FireBulletStrategy/FireBulletClearStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zzx/tank/FireBulletStrategy/FireBulletContinuousStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zzx/tank/FireBulletStrategy/FireBulletContinuousStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zzx/tank/FireBulletStrategy/FireBulletDefaultStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zzx/tank/FireBulletStrategy/FireBulletDefaultStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zzx/tank/FireBulletStrategy/FireBulletSquaresStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zzx/tank/FireBulletStrategy/FireBulletSquaresStrategy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,12 +146,25 @@
       <workItem from="1560083825623" duration="1432000" />
       <workItem from="1579845937308" duration="6767000" />
       <workItem from="1580086983453" duration="242000" />
-      <workItem from="1580102443926" duration="19207000" />
+      <workItem from="1580102443926" duration="20464000" />
+      <workItem from="1580180451446" duration="1580000" />
     </task>
+    <task id="LOCAL-00001" summary="单例和策略模式追加">
+      <created>1580123034487</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580123034487</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="单例和策略模式追加" />
+    <option name="LAST_COMMIT_MESSAGE" value="单例和策略模式追加" />
   </component>
   <component name="WindowStateProjectService">
     <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1580102922856">
@@ -173,38 +179,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1580118292578" />
-    <state x="372" y="1" key="CommitChangelistDialog2" timestamp="1579846024910">
+    <state x="372" y="1" key="CommitChangelistDialog2" timestamp="1580123033316">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="1" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1579846024910" />
-    <state width="1493" height="149" key="GridCell.Tab.0.bottom" timestamp="1580122955076">
+    <state x="372" y="1" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1580123033316" />
+    <state width="1493" height="149" key="GridCell.Tab.0.bottom" timestamp="1580182053519">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="149" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580122955076" />
-    <state width="1493" height="149" key="GridCell.Tab.0.center" timestamp="1580122955076">
+    <state width="1493" height="149" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580182053519" />
+    <state width="1493" height="149" key="GridCell.Tab.0.center" timestamp="1580182053519">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="149" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1580122955076" />
-    <state width="1493" height="149" key="GridCell.Tab.0.left" timestamp="1580122955076">
+    <state width="1493" height="149" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1580182053519" />
+    <state width="1493" height="149" key="GridCell.Tab.0.left" timestamp="1580182053519">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="149" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1580122955076" />
-    <state width="1493" height="149" key="GridCell.Tab.0.right" timestamp="1580122955076">
+    <state width="1493" height="149" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1580182053519" />
+    <state width="1493" height="149" key="GridCell.Tab.0.right" timestamp="1580182053519">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="149" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1580122955076" />
+    <state width="1493" height="149" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1580182053519" />
     <state x="450" y="0" key="SettingsEditor" timestamp="1580095423087">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="450" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1580095423087" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1580122992655">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1580123054384">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1580122992655" />
-    <state x="449" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1580102459940">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1580123054384" />
+    <state x="449" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1580180452764">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="449" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1580102459940" />
+    <state x="449" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1580180452764" />
     <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579846018436">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

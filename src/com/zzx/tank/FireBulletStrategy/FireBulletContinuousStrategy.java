@@ -12,7 +12,6 @@ public class FireBulletContinuousStrategy implements FireBulletStrategy {
     public void fire(Tank tank) {
         int bulletX = tank.getX() + tank.WIDTH/2 - ResourceManage.getInstance().bullet.getUp().getWidth()/2;
         int bulletY = tank.getY() + tank.HEIGHT/2 - ResourceManage.getInstance().bullet.getUp().getHeight()/2;
-        ArrayList<Bullet> bullets = new ArrayList<Bullet>();
         for (int i=0; i<5; i++) {
             int tempBulletX = bulletX;
             int tempBulletY = bulletY;
@@ -38,8 +37,7 @@ public class FireBulletContinuousStrategy implements FireBulletStrategy {
                 tempBulletY = bulletY - ResourceManage.getInstance().bullet.getUp().getHeight()*i;
             }
 
-            bullets.add(new Bullet(tempBulletX, tempBulletY, tank.getDir(), tank.getTF(), tank.getGroup()));
+            new Bullet(tempBulletX, tempBulletY, tank.getDir(), tank.getTF(), tank.getGroup());
         }
-        tank.getTF().getBulletList().addAll(bullets);
     }
 }

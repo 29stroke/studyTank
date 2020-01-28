@@ -26,6 +26,7 @@ public class Bullet {
         this.rectangle.y = this.y;
         this.rectangle.width = this.WIDTH;
         this.rectangle.height = this .HEIGHT;
+        tf.getBulletList().add(this);
     }
 
     /**

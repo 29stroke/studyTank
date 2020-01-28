@@ -12,14 +12,11 @@ public class FireBulletClearStrategy implements FireBulletStrategy {
     public void fire(Tank tank) {
         int bulletW = ResourceManage.getInstance().bullet.getUp().getWidth();
         int bulletH = ResourceManage.getInstance().bullet.getUp().getHeight();
-        ArrayList<Bullet> bullets = new ArrayList<Bullet>();
 
         for (Tank badTank:tank.getTF().getBadTankList()) {
             int bulletX = badTank.getX() + badTank.WIDTH/2 - bulletW/2;
             int bulletY = badTank.getY() + badTank.HEIGHT/2 - bulletH/2;
-            bullets.add(new Bullet(bulletX, bulletY, badTank.getDir(), badTank.getTF(), tank.getGroup()));
+            new Bullet(bulletX, bulletY, badTank.getDir(), badTank.getTF(), tank.getGroup());
         }
-
-        tank.getTF().getBulletList().addAll(bullets);
     }
 }
