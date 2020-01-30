@@ -1,28 +1,29 @@
-package com.zzx.tank;
+package com.zzx.tank.AbstractFactory;
 
+import com.zzx.tank.*;
 import com.zzx.tank.FireBulletStrategy.FireBulletDefaultStrategy;
-import com.zzx.tank.dto.ImageDto;
 import com.zzx.tank.FireBulletStrategy.FireBulletStrategy;
+import com.zzx.tank.dto.ImageDto;
 
 import java.awt.*;
 import java.util.Random;
 
-public class Tank {
-    public int WIDTH = ResourceManage.getInstance().goodTank.getUp().getWidth();
-    public int HEIGHT = ResourceManage.getInstance().goodTank.getUp().getHeight();
+public abstract class BaseTank {
+    public int WIDTH = ResourceManage.getInstance().goodTank[0].getUp().getWidth();
+    public int HEIGHT = ResourceManage.getInstance().goodTank[0].getUp().getHeight();
     public Rectangle rectangle = new Rectangle();
     private static final int SPEED = Integer.valueOf((String)PropertyManage.getInstance().getValue("tankSpeed"));
-    private int x = 200;
-    private int y = 200;
-    private Dir dir = Dir.UP;
-    private TankFrame tf = null;
+    protected int x = 200;
+    protected int y = 200;
+    protected Dir dir = Dir.UP;
+    protected TankFrame tf = null;
     private boolean moveing = false;
-    private boolean live = true;
+    protected boolean live = true;
     private Random random = new Random();
-    private Group group;
+    protected Group group;
     private FireBulletStrategy fireBulletStrategy = new FireBulletDefaultStrategy();
 
-    public Tank(int x, int y, Dir dir, TankFrame tf, Group group){
+    public BaseTank(int x, int y, Dir dir, TankFrame tf, Group group){
         this.x = x;
         this.y = y;
         this.dir = dir;
@@ -37,45 +38,7 @@ public class Tank {
     /**
      * 画出坦克
      */
-    public void paint(Graphics g){
-        if (live){
-            // 根据方向画出坦克图片
-            ImageDto goodTank = ResourceManage.getInstance().goodTank;
-            ImageDto badTank = ResourceManage.getInstance().badTank;
-            switch (dir) {
-                case UP:
-                    g.drawImage(this.group==Group.GOOD ? goodTank.getUp() : badTank.getUp(), x, y, null);
-                    break;
-                case RIGHT:
-                    g.drawImage(this.group==Group.GOOD ? goodTank.getRight() : badTank.getRight(), x, y, null);
-                    break;
-                case DOWN:
-                    g.drawImage(this.group==Group.GOOD ? goodTank.getDown() : badTank.getDown(), x, y, null);
-                    break;
-                case LEFT:
-                    g.drawImage(this.group==Group.GOOD ? goodTank.getLeft() : badTank.getLeft(), x, y, null);
-                    break;
-                case UP_RIGHT:
-                    g.drawImage(this.group==Group.GOOD ? goodTank.getRightUp() : badTank.getRightUp(), x, y, null);
-                    break;
-                case RIGHT_DOWN:
-                    g.drawImage(this.group==Group.GOOD ? goodTank.getRightDown() : badTank.getRightDown(), x, y, null);
-                    break;
-                case DOWN_LEFT:
-                    g.drawImage(this.group==Group.GOOD ? goodTank.getLeftDown() : badTank.getLeftDown(), x, y, null);
-                    break;
-                case LEFT_UP:
-                    g.drawImage(this.group==Group.GOOD ? goodTank.getLeftUp() : badTank.getLeftUp(), x, y, null);
-                    break;
-                default:
-                    break;
-            }
-            move();
-        } else {
-            // 删除失去生命的坦克
-            tf.getBadTankList().remove(this);
-        }
-    }
+    public abstract void paint(Graphics g);
 
     /**
      * 发射子弹
@@ -90,7 +53,7 @@ public class Tank {
     /**
      * 移动坦克
      */
-    private void move(){
+    protected void move(){
         if(moveing){
             switch (dir) {
                 case UP:
@@ -196,6 +159,8 @@ public class Tank {
         this.live = live;
     }
 
+    public boolean getLive() { return this.live; }
+
     public void setMoveing(boolean moveing) {
         this.moveing = moveing;
     }
@@ -218,5 +183,9 @@ public class Tank {
 
     public void setFireBulletStrategy(FireBulletStrategy strategy) {
         this.fireBulletStrategy = strategy;
+    }
+
+    public FireBulletStrategy getFireBulletStrategy() {
+        return fireBulletStrategy;
     }
 }
