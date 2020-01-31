@@ -1,6 +1,8 @@
 package com.zzx.tank;
 
 
+import com.zzx.tank.AbstractFactory.BaseTank;
+
 import java.util.Random;
 
 public class TankMain {
@@ -20,10 +22,11 @@ public class TankMain {
 			Dir badDir = Dir.values()[random.nextInt(8)];
 
 			// 位置重叠问题待解决
-			Tank badTank = new Tank(badX, badY, badDir, tf, Group.BAD);
+			BaseTank badTank = tf.gameFactory.createTank(badX, badY, badDir, tf, Group.BAD);
 			badTank.setMoveing(true);
 			tf.getBadTankList().add(badTank);
 		}
+
 		// 刷新频率
 		while(true){
 			Thread.sleep(50);

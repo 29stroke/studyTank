@@ -1,10 +1,9 @@
 package com.zzx.tank.FireBulletStrategy;
 
-import com.zzx.tank.Bullet;
-import com.zzx.tank.Tank;
+import com.zzx.tank.AbstractFactory.BaseTank;
 
 import java.util.List;
 
 public interface FireBulletStrategy {
-    public void fire(Tank tank);
+    public void fire(BaseTank tank);
 }

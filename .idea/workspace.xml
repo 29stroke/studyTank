@@ -3,12 +3,49 @@
   <component name="ChangeListManager">
     <list default="true" id="c79bfd50-641f-486b-ab90-7b1c892dc338" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zzx/tank/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zzx/tank/Bullet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zzx/tank/Exblode.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/zzx/tank/FireBulletStrategy/FireBulletAllDirectionsStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zzx/tank/FireBulletStrategy/FireBulletAllDirectionsStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/zzx/tank/FireBulletStrategy/FireBulletClearStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zzx/tank/FireBulletStrategy/FireBulletClearStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/zzx/tank/FireBulletStrategy/FireBulletContinuousStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zzx/tank/FireBulletStrategy/FireBulletContinuousStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/zzx/tank/FireBulletStrategy/FireBulletDefaultStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zzx/tank/FireBulletStrategy/FireBulletDefaultStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/zzx/tank/FireBulletStrategy/FireBulletSquaresStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zzx/tank/FireBulletStrategy/FireBulletSquaresStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zzx/tank/FireBulletStrategy/FireBulletStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zzx/tank/FireBulletStrategy/FireBulletStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zzx/tank/ResourceManage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zzx/tank/ResourceManage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zzx/tank/TankFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zzx/tank/TankFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zzx/tank/TankMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zzx/tank/TankMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/10.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/7.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/8.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/9.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/e1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/e10.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/e11.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/e12.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/e13.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/e14.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/e15.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/e16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/e2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/e3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/e4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/e5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/e6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/e7.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/e8.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/e9.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/exblode/12.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/exblode/13.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/exblode/14.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/exblode/15.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/exblode/16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/tank.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,11 +193,28 @@
       <option name="project" value="LOCAL" />
       <updated>1580123034487</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="单例和策略模式追加">
+      <created>1580454481628</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1580454481628</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="单例和策略模式追加" />
@@ -175,38 +229,42 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1580105218339" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580118292578">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580457048152">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1580118292578" />
-    <state x="372" y="1" key="CommitChangelistDialog2" timestamp="1580123033316">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1580457048152" />
+    <state x="372" y="1" key="CommitChangelistDialog2" timestamp="1580454480081">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="1" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1580123033316" />
-    <state width="1493" height="149" key="GridCell.Tab.0.bottom" timestamp="1580182053519">
+    <state x="372" y="1" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1580454480081" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1580456449618">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="149" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580182053519" />
-    <state width="1493" height="149" key="GridCell.Tab.0.center" timestamp="1580182053519">
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1580456449618" />
+    <state width="1493" height="155" key="GridCell.Tab.0.bottom" timestamp="1580458821156">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="149" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1580182053519" />
-    <state width="1493" height="149" key="GridCell.Tab.0.left" timestamp="1580182053519">
+    <state width="1493" height="155" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580458821156" />
+    <state width="1493" height="155" key="GridCell.Tab.0.center" timestamp="1580458821156">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="149" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1580182053519" />
-    <state width="1493" height="149" key="GridCell.Tab.0.right" timestamp="1580182053519">
+    <state width="1493" height="155" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1580458821156" />
+    <state width="1493" height="155" key="GridCell.Tab.0.left" timestamp="1580458821156">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="149" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1580182053519" />
+    <state width="1493" height="155" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1580458821156" />
+    <state width="1493" height="155" key="GridCell.Tab.0.right" timestamp="1580458821156">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="155" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1580458821156" />
     <state x="450" y="0" key="SettingsEditor" timestamp="1580095423087">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="450" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1580095423087" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1580123054384">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1580454488566">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1580123054384" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1580454488566" />
     <state x="449" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1580180452764">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -219,5 +277,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="447" y="145" width="642" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1580093895813" />
+    <state x="511" y="40" key="refactoring.ChangeSignatureDialog" timestamp="1580457823742">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="511" y="40" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1580457823742" />
   </component>
 </project>
